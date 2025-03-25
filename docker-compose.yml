@@ -1,0 +1,9 @@
+
+services:
+  analyse:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./datapde:/app/data
+    container_name: analyse_container
